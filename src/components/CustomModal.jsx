@@ -39,10 +39,10 @@ const CustomModal = ({ show, handleClose, movieId }) => {
       setFavorites(updatedFavorites);
       localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
       setAlert(`${data.movie} has been added to your favorites!`);
-      setTimeout(() => setAlert(null), 3000); // Remove alert after 3 seconds
+      setTimeout(() => setAlert(null), 3000); 
     } else {
       setAlert(`${data.movie} is already in your favorites!`);
-      setTimeout(() => setAlert(null), 3000); // Remove alert after 3 seconds
+      setTimeout(() => setAlert(null), 3000);
     }
   };
 
